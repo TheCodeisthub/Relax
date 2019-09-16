@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%),
+    url("../images/image1.png") no-repeat center center / cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(14px + 0.25vw);
+  overflow: hidden;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 200px 1fr;
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main"
+    "sidebar main";
+  height: 100vh;
+  margin-top: 20vh;
+}
+
+.left-aside {
+  grid-area: sidebar;
+  background: transparent;
+}
+
+.time-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10vh;
+  position: relative;
+  left: 5em;
+}
+
+.left-circle {
+  border: 1px solid #fff;
+  border-radius: 100px;
+  background: transparent;
+  width: 102px;
+  height: 102px;
+  margin-top: 2em;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.lc-p {
+  font-weight: 900;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+}
+
+
+
+.mins {
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+}
+
+
+.h1--c {
+  grid-area: header;
+  background: transparent;
+  color: #ffffff;
+}
+
+.h1 {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto; */
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.player--bg {
+  grid-area: main;
+  background: transparent;
+  /* width: 138px;
+  height: 138px; */
+}
+
+.player {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  width: 138px;
+  height: 138px;
+  margin-top: 8em;
+  border: none;
+  border-radius: 100px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.h1__player {
+  position: relative;
+  right: 5em;
+}
