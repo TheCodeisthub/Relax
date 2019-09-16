@@ -69,15 +69,12 @@ body {
   text-align: center;
 }
 
-
-
 .mins {
   font-weight: 900;
   font-size: 18px;
   color: #fff;
   text-align: center;
 }
-
 
 .h1--c {
   grid-area: header;
